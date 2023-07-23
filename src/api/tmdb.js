@@ -1,6 +1,6 @@
 import axios from "axios";
 const baseUrl = "https://api.themoviedb.org/3";
-const apiKey = "daa72e5129266ed8b88b414c034ff362";
+const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
 const getMovies = async (filters = []) => {
   const movies = [];
@@ -84,7 +84,6 @@ const getTrendingTvShows = async (filters) => {
 //   }
 //   return movies;
 // };
-
 
 export {
   getMovies,
