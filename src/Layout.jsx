@@ -12,7 +12,7 @@ const Layout = ({ children, backdropPath }) => {
       ></div>
       <div className="container">
         <Sidebar />
-        <div className="main-content">sa{children}</div>
+        <div className="main-content">{children}</div>
       </div>
     </>
   );
